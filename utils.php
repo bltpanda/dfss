@@ -1,5 +1,11 @@
 <?php
-
+/**
+*工具类
+*Log：保存执行信息，以及将返回的html文件数据本地化保存
+*analyze：解析类，解析html文件，拆分字符串的过程
+*dayData: 当前的预约状态类
+*@author bitpanda
+*/
 class Log
 {
 	public function __construct()

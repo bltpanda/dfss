@@ -1,4 +1,10 @@
 <?php
+/**
+*执行类，程序入口
+*整个程序以一定时间间隔持续刷新预约单，一直到设定的时间段检测到有可预约状态，提交预约单
+*程序中调整hasFreeTime方法，可以设定一天几个预约时间段的优先级
+*@author bitpanda
+*/
 
 	include("configure.php");
 	include("utils.php");

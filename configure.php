@@ -4,6 +4,9 @@
 *运行前需先配置好以下参数：
 *username/password  用户名密码
 *dateList 约车日期，可多选
+*tesseract_path tesseract路径(验证码自动识别用到)
+*is_auto_decode 是否自动识别验证码；TRUE:用tesseract自动识别；FALSE:打开图片，控制台手动输入验证码
+*@author bitpanda
 */
 class configure
 {	
@@ -12,6 +15,10 @@ class configure
 		$this->username = "";
 		$this->password = "";
 
+		$this->tesseract_path = 'D:/GreenPro/Tesseract-ocr/tesseract.exe';
+			
+		$this->is_auto_decode = true;
+			
 		$this->postField = urlencode("散段");
 		$this->refreshField = urlencode("刷新");
 		
@@ -26,8 +33,7 @@ class configure
 		$this->yueche_html = '.\file\yueche.html';
 		$this->refresh_html = '.\file\refresh.html';
 		$this->yueche_result_html = '.\file\yuehce_result.html';
-		
-		$this->tesseract_path = 'D:/GreenPro/Tesseract-ocr/tesseract.exe';
+
 		$this->decode_path = '.\file\decode';
 		
 		$this->dateList = array(
