@@ -161,4 +161,7 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
-.html
+
+# LOG file
+*.html
+*.txt
